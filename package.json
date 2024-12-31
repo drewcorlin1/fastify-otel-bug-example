@@ -10,7 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@fastify/request-context": "^5.1.0",
     "@opentelemetry/auto-instrumentations-node": "^0.55.0",
     "@opentelemetry/exporter-trace-otlp-proto": "^0.57.0",
     "fastify": "^4.28.1"

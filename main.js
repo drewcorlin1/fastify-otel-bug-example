@@ -1,10 +1,8 @@
 require('./tracing');
 
 const fastify = require('fastify');
-const { fastifyRequestContext } = require('@fastify/request-context');
 
 const app = fastify();
-app.register(fastifyRequestContext);
 
 app.addHook('onRequest', (_req, _res, done) => {
   new Promise((r) => setTimeout(r, 100)).then(done);
